@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  line-height: 1.75;
+}
+/* button */
+.btn {
+  border: none;
+}
+.btn-outline-secondary:hover {
+  background-color: rgba(33, 40, 50, 0.1);
+}
+.btn-outline-dark {
+  color: #dd4941;
+  background-color: #f0e3e7;
+}
+.btn-primary {
+  background-color: #ffc800;
+  font-size: 1.8rem;
+  padding: 20px 40px;
+  border-radius: 4px;
+}
+.btn-primary:hover {
+  background-color: rgba(255, 200, 0, 0.9);
+}
+
+/* header */
+.sub-header {
+  height: 63px;
+  background-color: #f8f9fa;
+}
+.header-span {
+  font-size: 1.4rem;
+
+  color: #8e9195;
+}
+/* navbar */
+.navbar {
+  padding: 1.5rem 1rem;
+}
+.navbar-brand {
+  width: 150px;
+}
+.navbar-brand img {
+  width: 100%;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 1rem;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+.nav-item a:hover {
+  color: #ffc800;
+}
+/* toogle */
+.toogle {
+  padding: 0 30px;
+  cursor: pointer;
+  position: relative;
+}
+.toogle i {
+  font-size: 1.8rem;
+}
+.toogle:hover .btn-active,
+.toogle:hover .toogle-active {
+  display: block;
+}
+.btn-active {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 92px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(33, 40, 50, 0.3);
+  display: none;
+}
+.toogle-active {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  padding: 4px 13px;
+  color: #fff;
+  background-color: #000;
+  display: none;
+  z-index: 2;
+}
+
+.border-bottom-primary {
+  border-bottom: 3px solid #dc392d !important;
+}
+/* text end */
+.text-end {
+  text-align: right;
+}
+.toogle-cat:hover .btn-active {
+  display: block;
+}
+.toogle-cat {
+  margin-right: 20px;
+  position: relative;
+  text-decoration: none;
+}
+.toogle-cat i {
+  font-size: 1.8rem;
+  color: #000;
+}
+/* content */
+
+.content {
+  padding: 0;
+}
+
+/* masthead */
+.masthead {
+  padding: 0;
+  position: relative;
+}
+.masthead-sub {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.masthead-subheading {
+  font-size: 3rem;
+  font-style: italic;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+.masthead-heading {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 5rem;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+/* page-section */
+.page-section {
+  padding: 100px 0;
+}
+.section-heading {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+.section-subheading {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+.fa-stack {
+  background-color: #ffc800;
+  border-radius: 92px;
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+.fa-4x {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.my-3 {
+  font-size: 2rem;
+}
+.text-muted {
+  font-size: 1.6rem;
+}
+
+/*  <!-- Portfolio Grid-->*/
+
+.portfolio-item {
+  cursor: pointer;
+}
+.portfolio-caption {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+}
+.portfolio-caption-heading {
+  font-size: 2.4rem;
+  color: #212529;
+}
+
+.img-fluid {
+  position: relative;
+}
+.portfolio-item:hover .portfolio-hover {
+  display: block;
+}
+.portfolio-hover {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  bottom: 0;
+  right: 0;
+  width: 92%;
+  height: 73%;
+  background-color: rgba(255, 200, 0, 0.9);
+  display: none;
+}
+.portfolio-hover i {
+  font-size: 5rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* <!-- About--> */
+
+.timeline {
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+.timeline::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1.5px;
+  content: "";
+  background-color: #e9ecef;
+}
+.timeline li {
+  min-height: 170px;
+  margin-bottom: 100px;
+}
+.timeline-image {
+  width: 170px;
+  height: 170px;
+  margin-left: -85px;
+  position: absolute;
+  left: 50%;
+}
+.timeline-image {
+  background-color: #ffc800;
+  border-radius: 50%;
+}
+.timeline-image h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
+}
+.timeline-panel-left {
+  float: left;
+  width: 41%;
+  text-align: right;
+  padding: 0 40px 20px 20px;
+}
+.timeline-panel-right {
+  float: right;
+  width: 41%;
+  text-align: left;
+  padding: 0 40px 20px 20px;
+}
+.timeline-heading h4 {
+  font-size: 2.4rem;
+}
+
+/* team */
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.team-member h4 {
+  margin-top: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+.team-member i {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-social {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+/* <!-- Clients--> */
+.img-brand {
+  height: 5rem;
+}
+
+/* contact */
+#Contact {
+  background-image: url("https://muralsyourway.vtexassets.com/arquivos/ids/242208/Black-And-White-World-Map-Wall-Mural.jpg?v=638164450682600000");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.form-control {
+  padding: 30px;
+}
+textarea.form-control {
+  height: 100%;
+  min-height: 207px;
+}
+/* footer */
+.footer i {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer-left {
+  font-size: 1.5rem;
+}
+
+.link-dark {
+  font-size: 1.6rem;
+  color: #212529;
+}
